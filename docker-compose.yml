@@ -57,8 +57,6 @@ services:
       - /PATH/TO/PERSISTENT/FILES/nextcloud/uploadsize.conf:/etc/nginx/conf.d/uploadsize.conf
     depends_on:
       - "db"
-    links:
-      - "redis"
     networks:
       - proxy-tier
       - default
