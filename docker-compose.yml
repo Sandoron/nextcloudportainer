@@ -63,12 +63,6 @@ services:
       - proxy-tier
       - default
  
-  redis:
-    image: redis
-    container_name: redis
-    volumes:
-      -/PATH/TO/PERSISTENT/FILES/redis:/data
-    restart: unless-stopped
   proxy:
     build: ./proxy   
     container_name: proxy
