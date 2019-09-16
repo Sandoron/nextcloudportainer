@@ -70,9 +70,9 @@ services:
       - ./app/themes:/var/www/html/themes
       - /etc/localtime:/etc/localtime:ro
     environment:
-      - VIRTUAL_HOST=nextcloud.YOUR-DOMAIN
-      - LETSENCRYPT_HOST=nextcloud.YOUR-DOMAIN
-      - LETSENCRYPT_EMAIL=YOUR-EMAIL
+      - VIRTUAL_HOST=nextcloud.testdomain
+      - LETSENCRYPT_HOST=nextcloud.testdomain
+      - LETSENCRYPT_EMAIL=max1925@hotmail.de
     restart: unless-stopped
 
 volumes:
